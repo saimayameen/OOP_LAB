@@ -1,0 +1,167 @@
+/*class Message {
+    String text;
+    Message (String text){
+       this.text=text;
+    }
+    void display(){
+         System.out.println(text);
+    }
+    void setMessage (String text){
+        this.text=text;}}
+class SMS extends Message {
+    String rec_contact;
+    SMS (String text , String rec_contact){
+            super (text);
+            this.rec_contact = rec_contact;}
+    void display (){
+         System.out.println(this.text);
+          System.out.println(this.rec_contact);}}
+class Email extends Message{
+String Sender;
+String Reciever;
+String subject;
+   Email (String text , String Sender , String Reciever , String subject){
+     super(text);
+            this.Sender= Sender;
+            this.Reciever= Reciever;
+            this.subject= subject;}
+void display (){
+    System.out.println(super.text);
+    System.out.println(this.Sender);
+    System.out.println(this.Reciever);
+    System.out.println(this.subject);}}
+class Main {
+    public static void main(String [ ]args){
+    SMS s=new SMS("A text has been sent by", "+92764384678");
+    s.display();
+    Email e = new Email ("Meeting update!" , "Hey! It's 9 Am" , "You have meeting on 10 AM"," ");
+    e.display();
+    } }*/
+
+
+
+
+
+
+/*class BankAccount {
+    public double getInterestRate() {
+        return 0.05;     }
+}
+
+class SavingsAccount extends BankAccount {
+    public double getInterestRate() {
+        return 0.10;     }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        BankAccount account1 = new BankAccount();
+        SavingsAccount account2 = new SavingsAccount();
+        System.out.println("BankAccount Interest Rate: " + (account1.getInterestRate() * 100) + "%");
+        System.out.println("SavingsAccount Interest Rate: " + (account2.getInterestRate() * 100) + "%");
+    }
+}*/
+
+
+
+
+
+
+
+
+
+
+
+/*class Employee {
+     double baseSalary;   
+    public Employee() {
+        this.baseSalary = 20000; }
+    public double calculateSalary() {
+        return baseSalary; }}
+class Manager extends Employee {
+     final double bonus;
+    public Manager() {
+        super();
+        this.bonus = 25000; }
+    public double calculateSalary() {
+        return baseSalary + bonus; }}  
+class Worker extends Employee {
+     final int hour_Worked;
+     final double hour_Rate;
+    public Worker(int hour_Worked, double hour_Rate) {
+        super();
+        this.hour_Worked = hour_Worked;
+        this.hour_Rate = hour_Rate;}
+    public double calculateSalary() {
+        return baseSalary + (hour_Worked * hour_Rate);}}
+  
+public class Main{
+    public static void main(String[] args) {
+        Employee obj1 = new Employee();
+        Manager obj2 = new Manager();
+        Worker obj3 = new Worker(10, 80); 
+        System.out.println("Employee Salary: " + obj1.calculateSalary());
+        System.out.println("Manager Salary: " + obj2.calculateSalary());
+        System.out.println("Worker Salary: " + obj3.calculateSalary());
+    }
+}*/
+
+
+class Animal {
+    String name;
+    int age;
+    public Animal(String name, int age) {
+        this.name = name;
+        this.age = age;}}
+class Dog extends Animal {
+    public Dog(String name, int age) {
+        super(name, age); }
+    public void displayInfo() {
+        System.out.println("Dog's Name: " + name + ", Age: " + age);}}
+   class Cat extends Animal {
+    public Cat(String name, int age) {
+        super(name, age); }
+        public void displayInfo() {
+        System.out.println("Cat's Name: " + name + ", Age: " + age); }}
+   public class Main {
+    public static void main(String[] args) {
+        Dog obj1 = new Dog("Tommy", 7);
+        Cat obj2 = new Cat("Massy", 5);
+        dog.displayInfo();
+        cat.displayInfo();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
